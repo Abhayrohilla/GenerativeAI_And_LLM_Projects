@@ -1,5 +1,3 @@
-# 👉 Q: "Ek LLM chain banao jo kisi topic pe poem likhe."
-
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
 from langchain_ollama import OllamaLLM
@@ -13,3 +11,4 @@ prompt = PromptTemplate(
 
 chain = LLMChain(llm=llm, prompt=prompt)
 print(chain.run("friendship"))
+
